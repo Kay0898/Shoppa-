@@ -1,0 +1,291 @@
+:root {
+    --light-background: #fff;
+    --dark-color: #000;
+    --main-color: #ff0b00;
+    --main-color_light: #ff0b00;
+    --smll-font: 0.8rem;
+    --md-font: 1rem;
+    --bg-font: 1.2rem;
+    --normal-weight: 600;
+    --bold-weight: 700;
+    --logo-font: Ariel;
+    --body-font: "poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--light-background);
+    color: var(--dark-color);
+    font-family: var(--body-font);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.header {
+    position: fixed;
+    background: var(--light-background);
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 0.8px 0.5px 0.8px grey;
+}
+
+.navbar {
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-both {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-family: var(--logo-font);
+    color: var(--dark-color);
+    font-weight: var(--normal-weight);
+}
+
+.navbar_2 {
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_container {
+    width: 85%;
+}
+
+.search_bar_div {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.search {
+    width: 100%;
+    padding: 0.63rem;
+    border-radius: 5rem;
+    border-style: none;
+    border: 1px solid var(--dark-color);
+}
+
+.search:focus {
+    outline: none;
+}
+
+.search_bar_div span {
+    position: absolute;
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 0.4rem 0.63rem 0.4rem;
+    border-radius: 5rem;
+    top: 0;
+    right: 0;
+}
+
+.navigations {
+    background-color: var(--light-background);
+    position: fixed;
+    width: 85%;
+    height: 100vh;
+    top: 0;
+    left: -100%;
+    z-index: 100;
+    transition: left 0.3s ease;
+}
+
+.navigations_container {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+}
+
+.nav-item {
+    padding: 0.4rem;
+}
+
+.nav-link {
+    color: var(--dark-color);
+    font-size: var(--bg-font);
+}
+
+.chng {
+    width: 100%;
+    cursor: pointer;
+}
+
+.chng2 {
+    font-size: var(--md-font);
+}
+
+.chng3 {
+    padding: 0.63rem;
+}
+
+hr {
+    border-width: 0.1px;
+}
+
+.chng:hover,
+.chng2:hover {
+    background-color: var(--main-color_light);
+    color: #fff;
+}
+
+.menu_btn button {
+    padding: 0.63rem;
+    border-style: none;
+    background: none;
+    cursor: n;
+}
+
+/*Home Section*/
+.home_container {
+    padding-top: 6rem;
+}
+.clothes {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.mySlide {
+    display: none;
+}
+
+.container_h {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.active {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .clothes {
+        height: 200px;
+        object-fit: cover;
+    }
+}
+
+.hot_deals_container {
+    margin-top: 0.3rem;
+}
+
+.title {
+    background-color: var(--main-color);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem;
+}
+
+.see_more {
+    padding: 0.2rem;
+    border: 2px solid goldenrod;
+    border-radius: 5rem;
+    text-align: center;
+}
+
+.see_more a {
+    color: #fff;
+    font-size: var(--smll-font);
+    font-weight: var(--normal-weight);
+}
+
+.t-shirt, .shorts {
+    min-width: 100px;
+}
+
+.hot_deals_flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: scroll;
+}
+
+.hot_deals {
+    margin: 0.2rem;
+    border-bottom: 1px solid goldenrod;
+}
+
+.hot_deals p {
+    font-size: var(--smll-font);
+}
+
+.line_through {
+    color: var(--main-color);
+    text-decoration: line-through;
+    transform: rotate(-5deg);
+}
+
+.flex_p {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Trends{
+  background-color: var(--light-background);
+  color: var(--dark-color);
+}
+
+.trends{
+  border: 2px solid var(--main-color);
+}
+
+.trends a{
+  color: var(--dark-color);
+}
+
+.feature{
+  border: 2px solid #cccc;
+}
+
+.feature a{
+  color: #000;
+}
