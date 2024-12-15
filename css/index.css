@@ -1,8 +1,13 @@
+html {
+    font-size: 16px;
+}
+
 :root {
     --light-background: #fff;
     --dark-color: #000;
     --main-color: #ff0b00;
     --main-color_light: #ff0b00;
+    --litl-font: 0.6rem;
     --smll-font: 0.8rem;
     --md-font: 1rem;
     --bg-font: 1.2rem;
@@ -73,7 +78,7 @@ img {
     font-weight: var(--normal-weight);
 }
 
-.navbar_2 {
+.navbar-search {
     height: 3rem;
     display: flex;
     justify-content: center;
@@ -81,7 +86,7 @@ img {
 }
 
 .search_container {
-    width: 85%;
+    width: 95%;
 }
 
 .search_bar_div {
@@ -133,7 +138,8 @@ img {
     padding: 0.4rem;
 }
 
-.nav-link {
+.nav-link,
+span {
     color: var(--dark-color);
     font-size: var(--bg-font);
 }
@@ -155,10 +161,8 @@ hr {
     border-width: 0.1px;
 }
 
-.chng:hover,
-.chng2:hover {
+.chng:hover {
     background-color: var(--main-color_light);
-    color: #fff;
 }
 
 .menu_btn button {
@@ -222,11 +226,12 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.4rem;
+    padding: 0.2rem;
 }
 
 .see_more {
-    padding: 0.2rem;
+  display: flex;
+    padding: 0.05rem;
     border: 2px solid goldenrod;
     border-radius: 5rem;
     text-align: center;
@@ -238,7 +243,8 @@ hr {
     font-weight: var(--normal-weight);
 }
 
-.t-shirt, .shorts {
+.t-shirt,
+.shorts {
     min-width: 100px;
 }
 
@@ -269,23 +275,64 @@ hr {
     justify-content: space-between;
 }
 
-.Trends{
-  background-color: var(--light-background);
-  color: var(--dark-color);
+.Trends {
+    background-color: var(--light-background);
+    color: var(--dark-color);
 }
 
-.trends{
-  border: 2px solid var(--main-color);
+.trends {
+    border: 2px solid var(--main-color);
 }
 
-.trends a{
-  color: var(--dark-color);
+.trends a {
+    color: var(--dark-color);
 }
 
-.feature{
-  border: 2px solid #cccc;
+.feature {
+    border: 2px solid #cccc;
 }
 
-.feature a{
-  color: #000;
+.feature a {
+    color: #000;
+}
+
+/*Search section */
+.navbar-search_2 {
+    backgrund: yellowgreen;
+    width: 100%;
+}
+
+.search_container_2 {
+    height: 3rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.search_bar_div_2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.search_bar_div_2 span {
+    padding: 0.4rem;
+    font-size: var(--bg-font);
+    font-weight: var(--bold-weight);
+}
+
+.search_2 {
+    width: 80%;
+    padding: 0.4rem;
+    border-style: none;
+}
+
+.search_2:focus {
+    outline: none;
+}
+
+@media screen and (min-width: 768px){
+  .see_more{
+    padding: 0.5rem;
+  }
 }
